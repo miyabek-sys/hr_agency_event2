@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>アラフィフのための1Day選考会 | 北海道のアットホームな牧場オンラインイベント</title>
+  <meta name="description" content="アラフィフのための北海道牧場のオンライン選考イベント。未経験歓迎、Zoom開催。自然や動物のそばで働く暮らしや、移住・住まいの相談もできる1Day選考会です。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="あぐりナビ就活FES" />
+  <meta property="og:title" content="アラフィフのための1Day選考会 | 北海道のアットホームな牧場オンラインイベント" />
+  <meta property="og:description" content="アラフィフのための北海道牧場のオンライン選考イベント。未経験歓迎、Zoom開催。自然や動物のそばで働く暮らしや、移住・住まいの相談もできる1Day選考会です。" />
+  <meta property="og:image" content="fvimage.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="アラフィフのための1Day選考会 | 北海道のアットホームな牧場オンラインイベント" />
+  <meta name="twitter:description" content="アラフィフのための北海道牧場のオンライン選考イベント。未経験歓迎、Zoom開催。自然や動物のそばで働く暮らしや、移住・住まいの相談もできる1Day選考会です。" />
+  <meta name="twitter:image" content="fvimage.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --cream: #fbe6c8;
+      --cream-2: #fffdf8;
+      --sage: #dff0d2;
+      --sage-deep: #5f9f45;
+      --green: #43a63b;
+      --green-dark: #2f6f28;
+      --sky: #dff3ff;
+      --sky-deep: #5da7d9;
+      --peach: #ffd3ad;
+      --peach-strong: #f07b11;
+      --yellow: #ffe164;
+      --text: #3b352d;
+      --muted: #726658;
+      --line: rgba(240, 123, 17, 0.14);
+      --shadow: 0 20px 54px rgba(190, 112, 34, 0.12);
+      --radius-xl: 30px;
+      --radius-lg: 22px;
+      --radius-md: 16px;
+      --radius-sm: 12px;
+      --max: 1160px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Noto Sans JP', system-ui, sans-serif;
+      color: var(--text);
+      background: var(--cream);
+      line-height: 1.75;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+
+    .container {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .section { padding: 88px 0; }
+    .section-title-wrap { margin-bottom: 38px; }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.82rem;
+      letter-spacing: 0.08em;
+      font-weight: 800;
+      color: var(--sage-deep);
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    .eyebrow::before {
+      content: '';
+      width: 28px;
+      height: 2px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--peach-strong), var(--sage-deep));
+    }
+    h1,h2,h3,p { margin: 0; }
+    h2.section-title {
+      font-size: clamp(1.9rem, 2.8vw, 2.8rem);
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+      font-weight: 900;
+    }
+    .section-lead {
+      margin-top: 12px;
+      max-width: 720px;
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.8;
+      text-wrap: pretty;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(14px);
+      background: rgba(255, 250, 243, 0.92);
+      border-bottom: 1px solid rgba(240,123,17,0.12);
+    }
+    .nav-inner {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 14px 0;
+    }
+    .brand { display: flex; align-items: center; gap: 12px; min-width: 0; }
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--peach-strong), var(--yellow));
+      box-shadow: 0 12px 24px rgba(240,123,17,0.24);
+      font-size: 1.05rem;
+    }
+    .brand-text { font-size: 0.96rem; font-weight: 800; line-height: 1.3; }
+    .nav-links { display: flex; gap: 22px; align-items: center; flex-wrap: wrap; }
+    .nav-links a { color: var(--muted); font-size: 0.9rem; font-weight: 700; }
+    .nav-links .cta-mini {
+      background: linear-gradient(135deg, var(--green), var(--sage-deep));
+      color: white;
+      padding: 11px 18px;
+      border-radius: 999px;
+      white-space: nowrap;
+      box-shadow: 0 12px 24px rgba(67,166,59,0.24);
+    }
+
+    .hero { padding: 34px 0 40px; }
+    .hero-shell {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+      background: var(--cream-2);
+      border: 1px solid rgba(240,123,17,0.10);
+      border-radius: 34px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      position: relative;
+    }
+    .hero-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      align-items: stretch;
+      gap: 0;
+    }
+    .hero-copy { padding: 62px 56px 48px; }
+    .hero-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(240,123,17,0.10);
+      color: var(--green-dark);
+      border: 1px solid rgba(240,123,17,0.18);
+      padding: 10px 16px;
+      border-radius: 999px;
+      font-weight: 800;
+      font-size: 0.86rem;
+      margin-bottom: 22px;
+    }
+    .hero-title {
+      font-size: clamp(1.7rem, 3vw, 2.9rem);
+      line-height: 1.15;
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      margin-bottom: 18px;
+      white-space: nowrap;
+    }
+    .hero-title .accent { color: var(--green); }
+    .hero-sub {
+      font-size: clamp(1rem, 1.5vw, 1.14rem);
+      color: var(--muted);
+      max-width: 590px;
+      margin-bottom: 28px;
+      text-wrap: pretty;
+    }
+    .hero-badges { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 28px; }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.96);
+      border: 1px solid rgba(240,123,17,0.10);
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--text);
+      box-shadow: 0 10px 22px rgba(240,123,17,0.08);
+    }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+    .button-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(135deg, var(--green), var(--sage-deep));
+      color: white;
+      padding: 16px 24px;
+      border-radius: 999px;
+      font-weight: 800;
+      box-shadow: 0 14px 32px rgba(55,80,55,0.18);
+    }
+    .button-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--green-dark);
+      font-weight: 800;
+      padding: 16px 18px;
+      border-radius: 999px;
+      background: rgba(255,246,236,0.92);
+      border: 1px solid rgba(240,123,17,0.12);
+    }
+    .hero-note {
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .hero-visual {
+      padding: 16px 16px 0 0;
+      display: flex;
+      align-items: stretch;
+    }
+    .hero-visual-card {
+      width: 100%;
+      position: relative;
+      min-height: 100%;
+      height: 100%;
+      display: flex;
+      background: white;
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 16px 42px rgba(55,80,55,0.12);
+      border: 1px solid rgba(77,107,73,0.08);
+    }
+    .hero-visual-card img {
+      width: 100%;
+      height: 100%;
+      min-height: 600px;
+      flex: 1 1 auto;
+      object-fit: cover;
+      display: block;
+    }
+
+    .story-ribbon {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 22px auto 0;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 14px;
+    }
+    .story-chip {
+      background: rgba(255,252,247,0.84);
+      border: 1px solid rgba(240,123,17,0.08);
+      border-radius: 22px;
+      padding: 18px 16px;
+      text-align: center;
+      box-shadow: 0 12px 26px rgba(240,123,17,0.08);
+    }
+    .story-chip .icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 18px;
+      margin: 0 auto 12px;
+      display: grid;
+      place-items: center;
+      font-size: 1.15rem;
+      color: var(--green-dark);
+      background: linear-gradient(135deg, rgba(255,211,173,0.92), rgba(255,225,100,0.78));
+    }
+    .story-chip p { font-size: 0.86rem; font-weight: 700; line-height: 1.45; }
+    .story-chip p br { display: none; }
+    @media (max-width: 720px) {
+      .story-chip p br { display: inline; }
+    }
+
+    .overview-grid {
+      display: grid;
+      grid-template-columns: 1.02fr 0.98fr;
+      gap: 28px;
+      align-items: start;
+    }
+    .glass-card {
+      background: rgba(255,253,249,0.88);
+      border: 1px solid rgba(240,123,17,0.08);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow);
+    }
+    .info-card { padding: 18px 28px; }
+    .info-item {
+      display: grid;
+      grid-template-columns: 112px 1fr;
+      gap: 18px;
+      padding: 22px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .info-item:last-child { border-bottom: 0; }
+    .info-label { font-size: 0.84rem; font-weight: 900; color: var(--sage-deep); letter-spacing: 0.05em; }
+    .info-value strong { font-size: 1.04rem; }
+    .info-sub { font-size: 0.9rem; color: var(--muted); margin-top: 4px; }
+    .mini-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 10px;
+      border-radius: 999px;
+      background: rgba(240,123,17,0.10);
+      color: var(--green-dark);
+      font-size: 0.8rem;
+      font-weight: 800;
+      margin-right: 8px;
+    }
+
+    .overview-side { display: flex; flex-direction: column; gap: 16px; }
+    .feature-card {
+      padding: 22px;
+      display: grid;
+      grid-template-columns: 52px 1fr;
+      gap: 16px;
+      align-items: start;
+    }
+    .feature-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(240,123,17,0.18), rgba(255,225,100,0.86));
+      color: var(--green-dark);
+      display: grid;
+      place-items: center;
+      font-size: 1.15rem;
+      box-shadow: 0 10px 24px rgba(240,123,17,0.18);
+    }
+    .feature-card h3 { font-size: 1rem; margin-bottom: 4px; }
+    .feature-card p { font-size: 0.92rem; color: var(--muted); line-height: 1.7; }
+    .company-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 26px; }
+    .company-card { overflow: hidden; }
+    .company-photo { height: 230px; position: relative; overflow: hidden; }
+    .company-photo img { width: 100%; height: 100%; object-fit: cover; }
+    .company-badge {
+      position: absolute;
+      top: 18px;
+      left: 18px;
+      background: rgba(255,255,255,0.92);
+      color: var(--green-dark);
+      font-weight: 900;
+      font-size: 0.78rem;
+      border-radius: 999px;
+      padding: 7px 12px;
+    }
+    .company-body { padding: 24px; }
+    .company-body h3 { font-size: 1.2rem; margin-bottom: 10px; }
+    .company-meta { color: var(--muted); font-size: 0.9rem; display: flex; align-items: center; gap: 8px; margin-bottom: 14px; }
+    .company-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+    .company-tags span {
+      background: rgba(223,240,210,0.92);
+      color: var(--green-dark);
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 800;
+    }
+    .company-body p { color: var(--muted); font-size: 0.92rem; line-height: 1.8; }
+
+    .schedule-shell { max-width: 860px; margin: 0 auto; }
+    .timeline { position: relative; padding-left: 18px; }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 110px;
+      top: 12px;
+      bottom: 12px;
+      width: 2px;
+      background: linear-gradient(var(--sage), rgba(124,169,194,0.45));
+    }
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 86px 28px 1fr;
+      gap: 18px;
+      align-items: start;
+      margin-bottom: 14px;
+    }
+    .timeline-time {
+      font-size: 1.02rem;
+      font-weight: 900;
+      color: var(--green);
+      text-align: right;
+      padding-top: 10px;
+    }
+    .timeline-dot {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      margin-top: 12px;
+      background: var(--peach-strong);
+      box-shadow: 0 0 0 5px rgba(255,255,255,0.9);
+      z-index: 1;
+    }
+    .timeline-dot.emphasis { background: #c1590a; }
+    .timeline-content { padding: 0 0 20px; }
+    .timeline-box { padding: 20px 22px; }
+    .timeline-box h3 { font-size: 1rem; margin-bottom: 5px; }
+    .timeline-box p { color: var(--muted); font-size: 0.92rem; line-height: 1.75; }
+    .faq-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .faq-item { padding: 22px; }
+    .faq-q { display: grid; grid-template-columns: 34px 1fr; gap: 14px; align-items: start; }
+    .faq-a { display: grid; grid-template-columns: 34px 1fr; gap: 14px; align-items: start; margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--line); }
+    .faq-mark {
+      width: 34px;
+      height: 34px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      font-weight: 900;
+      color: white;
+    }
+    .faq-q .faq-mark { background: linear-gradient(135deg, var(--green), var(--sage-deep)); }
+    .faq-a .faq-mark { background: linear-gradient(135deg, var(--peach-strong), #f3b479); }
+    .faq-q strong { display:block; font-size: 0.98rem; line-height: 1.5; }
+    .faq-a p { color: var(--muted); font-size: 0.92rem; line-height: 1.8; }
+
+    .cta-section { padding-top: 24px; padding-bottom: 92px; }
+    .cta-card {
+      padding: 42px 32px;
+      text-align: center;
+      background: var(--cream-2);
+    }
+    .cta-title { font-size: clamp(1.8rem, 2.8vw, 2.8rem); line-height: 1.25; font-weight: 900; margin-bottom: 14px; }
+    .cta-copy { max-width: 700px; margin: 0 auto 24px; color: var(--muted); line-height: 1.85; text-wrap: pretty; }
+    .cta-actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 14px; }
+    .subnote { margin-top: 18px; font-size: 0.84rem; color: var(--muted); }
+
+    footer {
+      padding: 30px 0 46px;
+      color: var(--muted);
+    }
+    .footer-inner {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: center;
+      flex-wrap: wrap;
+      border-top: 1px solid rgba(77,107,73,0.08);
+      padding-top: 22px;
+    }
+    .footer-brand { display:flex; align-items:center; gap:10px; font-weight: 800; color: var(--text); }
+    .footer-meta { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 12px; }
+    .footer-links a { color: var(--muted); font-size: .84rem; font-weight: 700; }
+    .footer-copy { font-size:.86rem; line-height: 1.7; text-align: right; }
+
+    /* Fade-up: default visible. Only elements currently in viewport at load animate from below. */
+    .fade-up { transition: opacity .7s ease, transform .7s ease; }
+    html.js-animate .fade-up.pending { opacity: 0; transform: translateY(22px); }
+    html.js-animate .fade-up.visible { opacity: 1; transform: translateY(0); }
+    .delay-1 { transition-delay: .1s; }
+    .delay-2 { transition-delay: .2s; }
+    .delay-3 { transition-delay: .3s; }
+    @media (min-width: 981px) {
+      .hero-copy { padding: 56px 52px 42px; }
+      .hero-visual { padding: 16px 16px 8px 0; }
+      .hero-visual-card { min-height: 0; }
+      .hero-visual-card img { min-height: clamp(460px, 39vw, 540px); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .fade-up { transition: none; }
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .overview-grid,
+      .company-grid,
+      .faq-grid { grid-template-columns: 1fr; }
+      .hero-visual { padding: 0 16px 12px; }
+      .hero-copy { padding: 48px 24px 28px; }
+      .story-ribbon { grid-template-columns: repeat(3, 1fr); }
+      .timeline::before { left: 93px; }
+      .hero-visual-card img { min-height: 360px; }
+    }
+
+    @media (max-width: 720px) {
+      nav { position: sticky; }
+      .nav-inner { padding: 10px 0; gap: 10px; }
+      .nav-links { gap: 10px; }
+      .nav-links a:not(.cta-mini) { display: none; }
+      .nav-links .cta-mini { padding: 9px 14px; font-size: .82rem; }
+      .brand-mark { width: 38px; height: 38px; border-radius: 12px; font-size: 1rem; }
+      .brand-text { font-size: 0.85rem; line-height: 1.25; }
+      .brand-text span { font-size: .72rem !important; }
+      .section { padding: 60px 0; }
+      .hero { padding: 20px 0 24px; }
+      .hero-shell { border-radius: 22px; }
+      .hero-copy { padding: 36px 20px 24px; }
+      .hero-note { line-height: 1.6; }
+      .hero-kicker { font-size: .78rem; padding: 8px 14px; margin-bottom: 16px; }
+      .hero-title { font-size: 1.7rem; letter-spacing: -0.03em; }
+      .hero-sub { font-size: .96rem; margin-bottom: 22px; }
+      .hero-badges { gap: 8px; margin-bottom: 22px; }
+      .hero-badge { font-size: .82rem; padding: 8px 12px; }
+      .hero-actions { gap: 10px; width: 100%; }
+      .button-primary, .button-secondary { width: 100%; justify-content: center; padding: 15px 18px; }
+      .hero-visual { padding: 0 10px 10px; }
+      .hero-visual-card { border-radius: 22px; }
+      .hero-visual-card img { min-height: 300px; }
+      .story-ribbon { grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 18px; }
+      .story-chip { padding: 16px 12px; border-radius: 18px; }
+      .story-chip .icon { width: 44px; height: 44px; border-radius: 14px; margin-bottom: 10px; font-size: 1rem; }
+      .story-chip p { font-size: .8rem; line-height: 1.4; }
+      .section-title-wrap { margin-bottom: 28px; }
+      h2.section-title { font-size: 1.4rem; line-height: 1.4; letter-spacing: -0.005em; }
+      .section-lead { font-size: .9rem; line-height: 1.7; }
+      .info-card { padding: 6px 18px; }
+      .info-item { grid-template-columns: 1fr; gap: 6px; padding: 16px 0; }
+      .info-label { font-size: .76rem; }
+      .info-value strong { font-size: 1rem; }
+      .info-sub { font-size: .84rem; }
+      .mini-tag { font-size: .74rem; padding: 4px 9px; margin-right: 6px; margin-bottom: 4px; }
+      .feature-card { padding: 18px; grid-template-columns: 44px 1fr; gap: 12px; }
+      .feature-icon { width: 44px; height: 44px; border-radius: 14px; font-size: 1rem; }
+      .feature-card h3 { font-size: .96rem; }
+      .feature-card p { font-size: .88rem; }
+      .company-photo { height: 200px; }
+      .company-body { padding: 20px; }
+      .company-body h3 { font-size: 1.08rem; }
+      .company-meta { font-size: .84rem; }
+      .company-tags span { font-size: .72rem; padding: 5px 9px; }
+      .company-body p { font-size: .88rem; }
+      /* Timeline: keep left column visible & align vertical rail */
+      .timeline { padding-left: 0; }
+      .timeline::before { left: 62px; top: 8px; bottom: 8px; }
+      .timeline-item { grid-template-columns: 54px 18px 1fr; gap: 8px; margin-bottom: 8px; }
+      .timeline-time { font-size: .88rem; padding-top: 12px; }
+      .timeline-dot { width: 16px; height: 16px; margin-top: 14px; box-shadow: 0 0 0 4px rgba(255,255,255,0.95); }
+      .timeline-content { padding: 0 0 14px; }
+      .timeline-box { padding: 16px; border-radius: 16px; }
+      .timeline-box h3 { font-size: .94rem; }
+      .timeline-box p { font-size: .86rem; }
+      .faq-grid { gap: 12px; }
+      .faq-item { padding: 18px; }
+      .faq-mark { width: 30px; height: 30px; border-radius: 10px; font-size: .88rem; }
+      .faq-q strong { font-size: .92rem; }
+      .faq-a p { font-size: .86rem; }
+      .cta-section { padding-bottom: 68px; }
+      .cta-card { padding: 32px 20px; border-radius: 24px; }
+      .cta-title { font-size: 1.35rem; line-height: 1.5; }
+      .cta-copy { font-size: .9rem; margin-bottom: 20px; }
+      .cta-actions { flex-direction: column; width: 100%; }
+      .cta-actions .button-primary, .cta-actions .button-secondary { width: 100%; }
+      .subnote { font-size: .78rem; margin-top: 14px; }
+      .footer-inner { flex-direction: column; align-items: flex-start; gap: 10px; }
+      .footer-meta { align-items: flex-start; }
+      .footer-links { gap: 10px; }
+      .footer-copy { font-size: .78rem; text-align: left; }
+    }
+
+    @media (max-width: 380px) {
+      .hero-title { font-size: 1.5rem; }
+      .story-chip p { font-size: .74rem; }
+      .hero-badge { font-size: .78rem; padding: 7px 11px; }
+      .container, .footer-inner { width: min(var(--max), calc(100% - 20px)); }
+      .hero-shell, .story-ribbon { width: min(var(--max), calc(100% - 20px)); }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a href="#top" class="brand">
+        <span class="brand-mark">🐄</span>
+        <span class="brand-text">アラフィフのための1Day選考会<br><span style="font-size:.78rem;color:var(--muted);font-weight:700;">北海道のアットホームな牧場・オンライン開催</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="#overview">イベント概要</a>
+        <a href="#companies">出展牧場</a>
+        <a href="#schedule">当日の流れ</a>
+        <a href="#faq">FAQ</a>
+        <a href="#apply" class="cta-mini">申込はこちら</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-shell fade-up visible">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <div class="hero-kicker"><i class="fas fa-video"></i> オンライン採用イベント</div>
+            <h1 class="hero-title"><span class="accent">アラフィフのための</span><br>1Day選考会</h1>
+            <p class="hero-sub">
+              北海道のアットホームな牧場で、自然や動物のそばで働く暮らしへ。<br>
+              アラフィフのためのオンライン会社説明＆選考会です。<br>
+              住まいや移住のサポートも相談できる、牛の育成牧場で働いてみませんか？
+            </p>
+            <div class="hero-badges">
+              <span class="hero-badge"><i class="fas fa-location-dot"></i> 北海道・オホーツク</span>
+              <span class="hero-badge"><i class="fas fa-seedling"></i> 未経験歓迎</span>
+              <span class="hero-badge"><i class="fas fa-house"></i> 住まい・移住サポートあり</span>
+              <span class="hero-badge"><i class="fas fa-heart"></i> アットホームな職場</span>
+            </div>
+            <div class="hero-actions">
+              <a href="#apply" class="button-primary">参加申込はこちら <i class="fas fa-arrow-right"></i></a>
+              <a href="#overview" class="button-secondary">イベント詳細を見る <i class="fas fa-chevron-down"></i></a>
+            </div>
+            <p class="hero-note">参加無料 / 面接事前準備のサポートあり / オンラインで内々定</p>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-visual-card">
+              <!-- PC(981px以上・2カラム表示)は縦長のhero-visual-cardに合わせて fvimage-sp.jpg(縦長)を使用。
+                   モバイル/タブレット(980px以下・1カラム表示)は横長のhero-visual-cardに合わせて fvimage.jpg(横長)を使用。
+                   ファイル名の「-sp」はsmartphone用の意味で付けていたが、実際のレイアウト比率上はPC側で使う形になっている点に注意。 -->
+              <picture>
+                <source media="(min-width: 981px)" srcset="fvimage-sp.jpg">
+                <img src="fvimage.jpg" alt="北海道の牧場で牛とともに立つミドルシニア層のご夫婦">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="story-ribbon">
+        <div class="story-chip fade-up delay-1"><div class="icon"><i class="fas fa-tree"></i></div><p>自然の中で<br>体を動かす仕事</p></div>
+        <div class="story-chip fade-up delay-1"><div class="icon"><i class="fas fa-cow"></i></div><p>動物と接する<br>毎日をはじめる</p></div>
+        <div class="story-chip fade-up delay-2"><div class="icon"><i class="fas fa-hand-holding-heart"></i></div><p>未経験から<br>牛のお世話を</p></div>
+        <div class="story-chip fade-up delay-2"><div class="icon"><i class="fas fa-map"></i></div><p>北海道へ<br>移住してみたい</p></div>
+        <div class="story-chip fade-up delay-3"><div class="icon"><i class="fas fa-star"></i></div><p>生きがいの<br>ある仕事を探す</p></div>
+        <div class="story-chip fade-up delay-3"><div class="icon"><i class="fas fa-mug-hot"></i></div><p>仕事も趣味も<br>大切にできる</p></div>
+      </div>
+    </section>
+
+    <section id="overview" class="section">
+      <div class="container">
+        <div class="section-title-wrap fade-up">
+          <div class="eyebrow">Event Overview</div>
+          <h2 class="section-title">イベント概要</h2>
+          <p class="section-lead">
+            50代前後アラフィフのための、未経験歓迎のオンライン企業説明会・採用イベントです。<br>会社説明を聞いた後に個別面接へ。
+          </p>
+        </div>
+
+        <div class="overview-grid" style="grid-template-columns:1fr;">
+          <div class="glass-card info-card fade-up delay-1">
+            <div class="info-item">
+              <div class="info-label">イベント名</div>
+              <div class="info-value"><strong>アラフィフのための1Day選考会</strong></div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">日時</div>
+              <div class="info-value"><strong>2026年8月1日(土) 12:45〜18:00</strong><div class="info-sub">会社説明は13:00〜、個別面接は14:10より順次</div></div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">開催形式</div>
+              <div class="info-value"><span class="mini-tag"><i class="fas fa-video"></i> Zoom開催</span><span class="mini-tag"><i class="fas fa-laptop-house"></i> オンライン参加</span><div class="info-sub">参加URLは申込後にご案内予定です</div></div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">内容</div>
+              <div class="info-value">会社説明会・個別面接</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">申込からの流れ</div>
+              <div class="info-value">申込後キャリアアドバイザー(担当者)から詳細ご連絡<br>↓<br>担当者と相談しながら面接の事前準備<br>↓<br>当日説明会＆面接参加</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">出展</div>
+              <div class="info-value"><strong>北海道・興部(おこっぺ)町の牛の育成牧場 1社</strong><div class="info-sub">アットホームな雰囲気の職場です</div></div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">対象</div>
+              <div class="info-value">4,50代 / 未経験歓迎 / 移住希望の方歓迎<div class="info-sub">性別・学歴・前職を問わずご参加いただけます</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="companies" class="section">
+      <div class="container">
+        <div class="section-title-wrap fade-up">
+          <div class="eyebrow">Participating Farm</div>
+          <h2 class="section-title">出展牧場のご紹介</h2>
+        </div>
+
+        <!-- 企業紹介トップ：写真＋概要 -->
+        <div class="overview-grid" style="margin-bottom:26px;">
+          <article class="glass-card company-card fade-up delay-1" style="overflow:hidden;">
+            <div class="company-photo" style="height:100%;min-height:260px;">
+              <img src="cpimage1.jpg" alt="北海道の牧場で子牛とふれあうスタッフ">
+            </div>
+          </article>
+          <div class="glass-card info-card fade-up delay-2" style="display:flex;flex-direction:column;justify-content:center;padding:28px;">
+            <h3 style="font-size:1.3rem;line-height:1.4;margin-bottom:12px;">オホーツクの海沿いにある、家族的な牧場</h3>
+            <div class="company-tags" style="margin-bottom:16px;">
+              <span>未経験歓迎</span>
+              <span>住まい・移住サポート</span>
+              <span>市街地まで車20分</span>
+            </div>
+            <p style="color:var(--muted);font-size:0.95rem;line-height:1.85;">代表とご家族、スタッフ数名で営むアットホームな牧場です。生後まもない子牛を、生後6〜8か月まで大切に育てるお仕事。牛は人懐っこい生きものなので、毎日愛情を込めて世話をしていると、甘えてすり寄ってくることもあります。<br><br>コンビニまで車で10分・市街地まで車20分・空港へのアクセスも◎<br>残業は月平均約5時間と少なめで、働きやすい環境です。</p>
+          </div>
+        </div>
+
+        <!-- 会社の3つの特長 -->
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;">
+          <div class="glass-card feature-card fade-up delay-1">
+            <div class="feature-icon"><i class="fas fa-mountain-sun"></i></div>
+            <div>
+              <h3>働く地域について</h3>
+              <p>北海道・オホーツク海沿岸の興部(おこっぺ)町にある牧場です。<b>一次産業が盛んで雄大な自然に囲まれています</b>が、<b>市街地までのアクセスが良く、空港も近い</b>ため暮らしやすい環境です。</p>
+            </div>
+          </div>
+          <div class="glass-card feature-card fade-up delay-2">
+            <div class="feature-icon"><i class="fas fa-cow"></i></div>
+            <div>
+              <h3>牛の健康管理のお仕事</h3>
+              <p>子牛から成牛までを育てる仕事で、<b>エサやりや牛舎の掃除</b>、<b>健康チェック</b>などが中心です。<br>牛の様子をよく観察することが大切で、<b>命を預かるやりがいのある仕事</b>です。</p>
+            </div>
+          </div>
+          <div class="glass-card feature-card fade-up delay-3">
+            <div class="feature-icon"><i class="fas fa-people-roof"></i></div>
+            <div>
+              <h3>アットホーム＆未経験歓迎</h3>
+              <p>代表家族とスタッフ数名で営むアットホームな職場。<b>未経験からスタートした社員が現在活躍中</b>です。<br>仕事を先輩社員からわかりやすく教えてもらえるので安心です。</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 主な募集条件 -->
+        <div class="glass-card info-card fade-up delay-2" style="margin-top:26px;">
+          <div class="info-item">
+            <div class="info-label">勤務地</div>
+            <div class="info-value"><strong>北海道紋別郡興部町</strong><div class="info-sub">オホーツク海沿岸。コンビニまで約10分、紋別市街まで約20分。</div></div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">仕事内容</div>
+            <div class="info-value"><strong>子牛の保育・育成スタッフ</strong><div class="info-sub">エサやりや牛舎の掃除、健康チェックなど</div></div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">勤務時間</div>
+            <div class="info-value"><strong>6:30〜16:30（実働8時間・休憩120分）</strong><div class="info-sub">残業は月平均約5時間と少なめです。</div></div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">休日</div>
+            <div class="info-value"><strong>年間72日（月6日・シフト制）</strong></div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">待遇</div>
+            <div class="info-value"><span class="mini-tag">社会保険完備</span><span class="mini-tag">住まい・移住支援あり</span><span class="mini-tag">通勤手当あり</span><span class="mini-tag">大型特殊免許取得支援あり</span></div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">応募条件</div>
+            <div class="info-value"><strong>学歴・経験不問／未経験歓迎／要普通自動車免許（AT限定可）</strong><div class="info-sub">現在お仕事中の方や休職の方もご参加いただけます。</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="schedule" class="section">
+      <div class="container">
+        <div class="section-title-wrap fade-up" style="text-align:center;">
+          <div class="eyebrow" style="justify-content:center;">Day Schedule</div>
+          <h2 class="section-title">イベント当日の流れ</h2>
+          <p class="section-lead" style="margin-left:auto;margin-right:auto;">企業説明会の後、個別面接を行います。<br>当日はPCまたはスマートフォンにてご参加ください。</p>
+        </div>
+
+        <div class="schedule-shell timeline">
+          <div class="timeline-item fade-up delay-1">
+            <div class="timeline-time">12:30</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="glass-card timeline-box">
+                <h3>入室開始</h3>
+                <p>Zoomの接続確認ができる時間。オンライン参加が不安な方も、運営スタッフがサポート</p>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item fade-up delay-1">
+            <div class="timeline-time">12:45</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="glass-card timeline-box">
+                <h3>イベント開始・全体説明</h3>
+                <p>イベントの流れや操作留意事項などをご説明</p>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item fade-up delay-2">
+            <div class="timeline-time">13:00</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="glass-card timeline-box">
+                <h3>会社説明会</h3>
+                <p>仕事内容、働く人、暮らし方まで、イメージが湧くように詳しくご紹介</p>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item fade-up delay-2">
+            <div class="timeline-time">13:30</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="glass-card timeline-box">
+                <h3>10分間休憩</h3>
+                <p>説明を振り返りながら、個別で聞いてみたいことを整理する時間です。</p>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item fade-up delay-3">
+            <div class="timeline-time">13:40</div>
+            <div class="timeline-dot emphasis"></div>
+            <div class="timeline-content">
+              <div class="glass-card timeline-box">
+                <h3>個別面接 </h3>
+                <p>面接を受けながら、この時間で直接ご質問ください。(1人15分程度を想定)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <div class="container">
+        <div class="section-title-wrap fade-up" style="text-align:center;">
+          <div class="eyebrow" style="justify-content:center;">FAQ</div>
+          <h2 class="section-title">よくある質問</h2>
+        </div>
+        <div class="faq-grid">
+          <div class="glass-card faq-item fade-up delay-1">
+            <div class="faq-q"><div class="faq-mark">Q</div><strong>牧場で働いた経験がなくても参加できますか？</strong></div>
+            <div class="faq-a"><div class="faq-mark">A</div><p>はい。未経験OKを前提にしたイベントです。「話を聞いてみたい」段階でも安心してご参加いただけます。</p></div>
+          </div>
+          <div class="glass-card faq-item fade-up delay-1">
+            <div class="faq-q"><div class="faq-mark">Q</div><strong>服装はスーツが必要ですか？</strong></div>
+            <div class="faq-a"><div class="faq-mark">A</div><p>オンライン開催のため、普段着で問題ありません。<br>※面接の際はカメラONにしていただくため、あまりにカジュアルな（タンクトップなど）の服装はお控え願います。</p></div>
+          </div>
+          <div class="glass-card faq-item fade-up delay-2">
+            <div class="faq-q"><div class="faq-mark">Q</div><strong>北海道への移住がまだ具体的でなくても大丈夫ですか？</strong></div>
+            <div class="faq-a"><div class="faq-mark">A</div><p>大丈夫です。住まいについて相談可能ですので、ご安心ください。</p></div>
+          </div>
+          <div class="glass-card faq-item fade-up delay-2">
+            <div class="faq-q"><div class="faq-mark">Q</div><strong>説明を聞くだけの参加でもよいですか？</strong></div>
+            <div class="faq-a"><div class="faq-mark">A</div><p>基本的には面接を受けたい方を対象としていますが、迷っている方や不安な方は事前にキャリアアドバイザーに相談いただけますのでご安心ください。</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="apply" class="section cta-section">
+      <div class="container">
+        <div class="glass-card cta-card fade-up">
+          <div class="eyebrow" style="justify-content:center;">Registration</div>
+          <h2 class="cta-title">参加申し込み</h2>
+          <p class="cta-copy">
+            本イベントは完全事前申し込み制となっております。<br>
+            ※申込人数が多い場合は早期に申込を止めさせていただく場合がございます。<br><br>
+            お申込み完了後、翌営業日までを目途に弊社キャリアアドバイザーより個別にご連絡いたします。事前に確認・相談したいこと等ございましたらアドバイザーにお話しください。
+          </p>
+          <div class="cta-actions">
+            <a href="https://e-ve.event-form.jp/event/137042/jppQjH9NrVkF" class="button-primary" target="_blank" rel="noopener noreferrer">参加申込フォームへ <i class="fas fa-arrow-up-right-from-square"></i></a>
+            <a href="#overview" class="button-secondary">概要をもう一度見る <i class="fas fa-rotate-left"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand"><span class="brand-mark" style="width:34px;height:34px;border-radius:12px;font-size:.9rem;">🐄</span> あぐりナビ就活FES 事務局</div>
+      <div class="footer-meta">
+        <div class="footer-links">
+          <a href="#overview">イベント概要</a>
+          <a href="#companies">出展牧場</a>
+          <a href="#schedule">当日の流れ</a>
+          <a href="#faq">FAQ</a>
+          <a href="#apply">申込</a>
+        </div>
+        <div class="footer-copy">© 2026 あぐりナビ. All rights reserved. / アラフィフのための1Day選考会</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      const items = document.querySelectorAll('.fade-up');
+      const vh = window.innerHeight || document.documentElement.clientHeight;
+      // Only elements currently in / just below the initial viewport get the fade-up entry animation.
+      // Everything further down stays fully visible from the start — no invisible gaps if the observer never fires.
+      document.documentElement.classList.add('js-animate');
+      items.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < vh * 1.1) {
+          el.classList.add('pending');
+          requestAnimationFrame(() => requestAnimationFrame(() => el.classList.add('visible')));
+        }
+      });
+    })();
+
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const href = a.getAttribute('href');
+        if (href === '#') return;
+        e.preventDefault();
+        const target = document.querySelector(href);
+        if (target) {
+          const top = target.getBoundingClientRect().top + window.scrollY - 72;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
