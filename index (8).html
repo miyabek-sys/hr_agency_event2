@@ -1,0 +1,794 @@
+<title>アラフィフ歓迎｜飛騨牛牧場のオンライン説明会＆個別面談会（岐阜・高山）</title>
+<meta name="description" content="岐阜・高山の飛騨牛牧場のオンライン説明会＆個別面談会。40〜50代・未経験歓迎、資格取得支援あり。まずは話を聞くだけでもOK。Zoom開催。" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #f6ecd8;
+    --cream-2: #fffdf6;
+    --sage: #dcefd0;
+    --sage-deep: #5f9f45;
+    --green: #43a63b;
+    --green-dark: #2f6f28;
+    --sky: #e2f1fb;
+    --sky-deep: #5da7d9;
+    --peach: #ffd9ad;
+    --peach-strong: #e8871f;
+    --gold: #c9962b;
+    --gold-soft: #f3d98a;
+    --yellow: #ffe164;
+    --text: #362f26;
+    --muted: #6f6355;
+    --line: rgba(201, 150, 43, 0.16);
+    --shadow: 0 20px 54px rgba(150, 110, 40, 0.14);
+    --radius-xl: 30px;
+    --radius-lg: 22px;
+    --radius-md: 16px;
+    --radius-sm: 12px;
+    --max: 1160px;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: 'Noto Sans JP', system-ui, sans-serif;
+    color: var(--text);
+    background: var(--cream);
+    line-height: 1.75;
+  }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; text-decoration: none; }
+
+  .ic { width: 1em; height: 1em; display: inline-block; vertical-align: -0.14em; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+
+  .container { width: min(var(--max), calc(100% - 40px)); margin: 0 auto; }
+
+  .section { padding: 88px 0; }
+  .section-title-wrap { margin-bottom: 38px; }
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-size: 0.82rem; letter-spacing: 0.08em; font-weight: 800;
+    color: var(--sage-deep); text-transform: uppercase; margin-bottom: 14px;
+  }
+  .eyebrow::before {
+    content: ''; width: 28px; height: 2px; border-radius: 999px;
+    background: linear-gradient(90deg, var(--gold), var(--sage-deep));
+  }
+  h1,h2,h3,p { margin: 0; }
+  h2.section-title { font-size: clamp(1.9rem, 2.8vw, 2.8rem); line-height: 1.25; letter-spacing: -0.02em; font-weight: 900; }
+  .section-lead { margin-top: 12px; max-width: 720px; color: var(--muted); font-size: 1rem; line-height: 1.8; text-wrap: pretty; }
+
+  nav {
+    position: sticky; top: 0; z-index: 20; backdrop-filter: blur(14px);
+    background: rgba(255, 250, 240, 0.92); border-bottom: 1px solid rgba(201,150,43,0.14);
+  }
+  .nav-inner {
+    width: min(var(--max), calc(100% - 32px)); margin: 0 auto; display: flex;
+    align-items: center; justify-content: space-between; gap: 20px; padding: 14px 0;
+  }
+  .brand { display: flex; align-items: center; gap: 12px; min-width: 0; }
+  .brand-text { font-size: 0.96rem; font-weight: 800; line-height: 1.3; }
+  .nav-links { display: flex; gap: 22px; align-items: center; flex-wrap: wrap; }
+  .nav-links a { color: var(--muted); font-size: 0.9rem; font-weight: 700; }
+  .nav-links .cta-mini {
+    background: linear-gradient(135deg, var(--green), var(--sage-deep)); color: white;
+    padding: 11px 18px; border-radius: 999px; white-space: nowrap;
+    box-shadow: 0 12px 24px rgba(67,166,59,0.24);
+  }
+
+  .hero { padding: 34px 0 40px; }
+  .hero-shell {
+    width: min(var(--max), calc(100% - 32px)); margin: 0 auto; background: var(--cream-2);
+    border: 1px solid rgba(201,150,43,0.12); border-radius: 34px; box-shadow: var(--shadow);
+    overflow: hidden; position: relative;
+  }
+  .hero-grid { position: relative; z-index: 1; display: grid; grid-template-columns: 1.05fr 0.95fr; align-items: stretch; gap: 0; }
+  .hero-copy { padding: 62px 56px 48px; }
+  .hero-title { font-size: clamp(1.7rem, 3vw, 2.9rem); line-height: 1.15; font-weight: 900; letter-spacing: -0.04em; margin-bottom: 18px; }
+  .hero-title .accent { color: var(--green); }
+  .hero-title .accent-gold { color: var(--gold); }
+  .hero-sub { font-size: clamp(1rem, 1.5vw, 1.14rem); color: var(--muted); max-width: 590px; margin-bottom: 28px; text-wrap: pretty; }
+  .hero-badges { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 28px; }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.96);
+    border: 1px solid rgba(201,150,43,0.14); border-radius: 999px; padding: 10px 14px;
+    font-size: 0.9rem; font-weight: 700; color: var(--text); box-shadow: 0 10px 22px rgba(201,150,43,0.08);
+  }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+  .button-primary {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: linear-gradient(135deg, var(--green), var(--sage-deep)); color: white;
+    padding: 16px 24px; border-radius: 999px; font-weight: 800; box-shadow: 0 14px 32px rgba(55,80,55,0.18);
+  }
+  .button-secondary {
+    display: inline-flex; align-items: center; gap: 10px; color: var(--green-dark); font-weight: 800;
+    padding: 16px 18px; border-radius: 999px; background: rgba(255,246,232,0.92); border: 1px solid rgba(201,150,43,0.16);
+  }
+  .hero-note { margin-top: 20px; font-size: 0.9rem; color: var(--muted); }
+
+  .hero-visual { padding: 16px 16px 0 0; display: flex; align-items: stretch; }
+  .hero-visual-card {
+    width: 100%; position: relative; min-height: 100%; height: 100%; display: flex;
+    background: white; border-radius: 28px; overflow: hidden; box-shadow: 0 16px 42px rgba(55,80,55,0.12);
+    border: 1px solid rgba(77,107,73,0.08);
+  }
+  .photo-ph { position: relative; width: 100%; height: 100%; min-height: 100%; }
+  .photo-ph > svg { width: 100%; height: 100%; display: block; object-fit: cover; }
+  .photo-tag .ic { width: 0.9em; height: 0.9em; }
+  .photo-tag {
+    position: absolute; right: 12px; bottom: 12px; z-index: 3;
+    background: rgba(54,47,38,0.72); color: #fff; font-size: 0.7rem; font-weight: 700;
+    padding: 5px 10px; border-radius: 999px; letter-spacing: .02em; display: inline-flex; align-items: center; gap: 6px;
+  }
+  .hero-visual-card .photo-ph { min-height: 460px; }
+
+  .award-band {
+    width: min(var(--max), calc(100% - 32px)); margin: 22px auto 0;
+    background: linear-gradient(135deg, #fff6e0, #fdeecb);
+    border: 1px solid rgba(201,150,43,0.28); border-radius: 26px; box-shadow: 0 14px 34px rgba(201,150,43,0.14);
+    padding: 22px 26px; display: grid; grid-template-columns: auto 1fr; gap: 20px; align-items: center;
+  }
+  .award-medal {
+    width: 60px; height: 60px; border-radius: 50%; display: grid; place-items: center; font-size: 1.6rem; color: #7a5400;
+    background: radial-gradient(circle at 30% 30%, var(--gold-soft), var(--gold));
+    box-shadow: 0 8px 20px rgba(201,150,43,0.4); flex: 0 0 auto;
+  }
+  .award-text strong { display: block; font-size: 1.06rem; font-weight: 900; color: #7a5400; margin-bottom: 4px; line-height: 1.4; }
+  .award-text p { color: var(--muted); font-size: 0.9rem; line-height: 1.6; }
+  .award-text .hl { color: var(--gold); font-weight: 900; }
+
+  .story-ribbon { width: min(var(--max), calc(100% - 32px)); margin: 22px auto 0; display: grid; grid-template-columns: repeat(6, 1fr); gap: 14px; }
+  .story-chip {
+    background: rgba(255,251,244,0.9); border: 1px solid rgba(201,150,43,0.1); border-radius: 22px;
+    padding: 18px 16px; text-align: center; box-shadow: 0 12px 26px rgba(201,150,43,0.08);
+  }
+  .story-chip .icon {
+    width: 52px; height: 52px; border-radius: 18px; margin: 0 auto 12px; display: grid; place-items: center;
+    font-size: 1.35rem; color: var(--green-dark);
+    background: linear-gradient(135deg, rgba(243,217,138,0.92), rgba(255,225,100,0.78));
+  }
+  .story-chip p { font-size: 0.86rem; font-weight: 700; line-height: 1.45; }
+  .story-chip p br { display: none; }
+  @media (max-width: 720px) { .story-chip p br { display: inline; } }
+
+  .overview-grid { display: grid; grid-template-columns: 1.02fr 0.98fr; gap: 28px; align-items: start; }
+  .glass-card { background: rgba(255,253,247,0.9); border: 1px solid rgba(201,150,43,0.1); border-radius: var(--radius-xl); box-shadow: var(--shadow); }
+  .info-card { padding: 18px 28px; }
+  .info-item { display: grid; grid-template-columns: 130px 1fr; gap: 18px; padding: 22px 0; border-bottom: 1px solid var(--line); }
+  .info-item:last-child { border-bottom: 0; }
+  .info-label { font-size: 0.84rem; font-weight: 900; color: var(--sage-deep); letter-spacing: 0.05em; }
+  .info-value strong { font-size: 1.04rem; }
+  .info-sub { font-size: 0.9rem; color: var(--muted); margin-top: 4px; }
+  .mini-tag {
+    display: inline-flex; align-items: center; gap: 6px; padding: 5px 10px; border-radius: 999px;
+    background: rgba(201,150,43,0.12); color: var(--green-dark); font-size: 0.8rem; font-weight: 800; margin-right: 8px; margin-bottom: 6px;
+  }
+
+  .feature-card { padding: 22px; display: grid; grid-template-columns: 52px 1fr; gap: 16px; align-items: start; }
+  .feature-icon {
+    width: 52px; height: 52px; border-radius: 16px;
+    background: linear-gradient(135deg, rgba(201,150,43,0.2), rgba(255,225,100,0.86));
+    color: var(--green-dark); display: grid; place-items: center; font-size: 1.35rem; box-shadow: 0 10px 24px rgba(201,150,43,0.18);
+  }
+  .feature-card h3 { font-size: 1rem; margin-bottom: 4px; }
+  .feature-card p { font-size: 0.92rem; color: var(--muted); line-height: 1.7; }
+
+  .company-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+  .company-tags span { background: rgba(220,239,208,0.92); color: var(--green-dark); padding: 6px 10px; border-radius: 999px; font-size: 0.78rem; font-weight: 800; }
+
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 6px; }
+  .step-card { padding: 24px 22px; text-align: center; position: relative; }
+  .step-num {
+    width: 40px; height: 40px; border-radius: 50%; margin: 0 auto 14px; display: grid; place-items: center;
+    font-weight: 900; color: #fff; background: linear-gradient(135deg, var(--green), var(--sage-deep)); box-shadow: 0 10px 20px rgba(67,166,59,0.22);
+  }
+  .step-card h3 { font-size: 1rem; margin-bottom: 6px; }
+  .step-card p { font-size: 0.9rem; color: var(--muted); line-height: 1.7; }
+  .step-card .step-icn { color: var(--gold); font-size: 1.4rem; margin-bottom: 6px; }
+
+  .schedule-shell { max-width: 860px; margin: 0 auto; }
+  .timeline { position: relative; padding-left: 18px; }
+  .timeline::before { content: ''; position: absolute; left: 110px; top: 12px; bottom: 12px; width: 2px; background: linear-gradient(var(--sage), rgba(124,169,194,0.45)); }
+  .timeline-item { display: grid; grid-template-columns: 86px 28px 1fr; gap: 18px; align-items: start; margin-bottom: 14px; }
+  .timeline-time { font-size: 1.02rem; font-weight: 900; color: var(--green); text-align: right; padding-top: 10px; }
+  .timeline-dot { width: 20px; height: 20px; border-radius: 50%; margin-top: 12px; background: var(--gold); box-shadow: 0 0 0 5px rgba(255,255,255,0.9); z-index: 1; }
+  .timeline-dot.emphasis { background: var(--green); }
+  .timeline-content { padding: 0 0 20px; }
+  .timeline-box { padding: 20px 22px; }
+  .timeline-box h3 { font-size: 1rem; margin-bottom: 5px; }
+  .timeline-box p { color: var(--muted); font-size: 0.92rem; line-height: 1.75; }
+
+  .faq-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+  .faq-item { padding: 22px; }
+  .faq-q { display: grid; grid-template-columns: 34px 1fr; gap: 14px; align-items: start; }
+  .faq-a { display: grid; grid-template-columns: 34px 1fr; gap: 14px; align-items: start; margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--line); }
+  .faq-mark { width: 34px; height: 34px; border-radius: 12px; display: grid; place-items: center; font-weight: 900; color: white; }
+  .faq-q .faq-mark { background: linear-gradient(135deg, var(--green), var(--sage-deep)); }
+  .faq-a .faq-mark { background: linear-gradient(135deg, var(--gold), var(--gold-soft)); }
+  .faq-q strong { display:block; font-size: 0.98rem; line-height: 1.5; }
+  .faq-a p { color: var(--muted); font-size: 0.92rem; line-height: 1.8; }
+
+  .cta-section { padding-top: 24px; padding-bottom: 92px; }
+  .cta-card { padding: 42px 32px; text-align: center; background: var(--cream-2); }
+  .cta-title { font-size: clamp(1.8rem, 2.8vw, 2.8rem); line-height: 1.25; font-weight: 900; margin-bottom: 14px; }
+  .cta-copy { max-width: 700px; margin: 0 auto 24px; color: var(--muted); line-height: 1.85; text-wrap: pretty; }
+  .cta-actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 14px; }
+  .cta-chips { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin: 0 auto 22px; }
+  .cta-chip {
+    display: inline-flex; align-items: center; gap: 7px; font-size: 0.86rem; font-weight: 800; color: var(--green-dark);
+    background: rgba(220,239,208,0.7); border: 1px solid rgba(95,159,69,0.25); padding: 8px 14px; border-radius: 999px;
+  }
+  .subnote { margin-top: 18px; font-size: 0.84rem; color: var(--muted); }
+
+  footer { padding: 30px 0 46px; color: var(--muted); }
+  .footer-inner {
+    width: min(var(--max), calc(100% - 40px)); margin: 0 auto; display: flex; justify-content: space-between;
+    gap: 16px; align-items: center; flex-wrap: wrap; border-top: 1px solid rgba(77,107,73,0.08); padding-top: 22px;
+  }
+  .footer-brand { display:flex; align-items:center; gap:10px; font-weight: 800; color: var(--text); }
+  .footer-meta { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
+  .footer-links { display: flex; flex-wrap: wrap; gap: 12px; }
+  .footer-links a { color: var(--muted); font-size: .84rem; font-weight: 700; }
+  .footer-copy { font-size:.86rem; line-height: 1.7; text-align: right; }
+
+  .fade-up { transition: opacity .7s ease, transform .7s ease; }
+  html.js-animate .fade-up.pending { opacity: 0; transform: translateY(22px); }
+  html.js-animate .fade-up.visible { opacity: 1; transform: translateY(0); }
+  .delay-1 { transition-delay: .1s; } .delay-2 { transition-delay: .2s; } .delay-3 { transition-delay: .3s; }
+
+  .hero-eventmeta { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 22px; }
+  .hero-eventmeta span { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; font-size: 0.98rem; padding: 10px 16px; border-radius: 14px; line-height: 1.3; }
+  .hero-eventmeta .ev-date { color: #fff; background: linear-gradient(135deg, var(--peach-strong), #f3a24a); box-shadow: 0 10px 22px rgba(232,135,31,0.24); }
+  .hero-eventmeta .ev-online { color: var(--green-dark); background: var(--sage); border: 1px solid rgba(95,159,69,0.35); }
+  .mobile-cta-bar { display: none; }
+
+  @media (min-width: 981px) {
+    .hero-copy { padding: 56px 52px 42px; }
+    .hero-visual { padding: 16px 16px 8px 0; }
+    .hero-visual-card { min-height: 0; }
+    .hero-visual-card .photo-ph { min-height: clamp(460px, 39vw, 540px); }
+  }
+  @media (prefers-reduced-motion: reduce) { .fade-up { transition: none; } }
+
+  @media (max-width: 980px) {
+    .hero-grid, .overview-grid, .company-grid, .faq-grid, .steps { grid-template-columns: 1fr; }
+    .hero-visual { padding: 0 16px 12px; order: -1; }
+    .hero-copy { padding: 48px 24px 28px; }
+    .story-ribbon { grid-template-columns: repeat(3, 1fr); }
+    .timeline::before { left: 93px; }
+    .hero-visual-card .photo-ph { min-height: 300px; }
+    .award-band { grid-template-columns: 1fr; text-align: center; }
+    .award-medal { margin: 0 auto; }
+  }
+
+  @media (max-width: 720px) {
+    .nav-inner { padding: 10px 0; gap: 10px; }
+    .nav-links { gap: 10px; }
+    .nav-links a:not(.cta-mini) { display: none; }
+    .nav-links .cta-mini { padding: 9px 14px; font-size: .82rem; }
+    .brand-text { font-size: 0.85rem; line-height: 1.25; }
+    .brand-text span { font-size: .72rem !important; }
+    .section { padding: 60px 0; }
+    .hero { padding: 20px 0 24px; }
+    .hero-shell { border-radius: 22px; }
+    .hero-copy { padding: 36px 20px 24px; }
+    .hero-title { font-size: 1.6rem; letter-spacing: -0.03em; }
+    .hero-sub { font-size: .96rem; margin-bottom: 22px; }
+    .hero-badge { font-size: .82rem; padding: 8px 12px; }
+    .hero-actions { gap: 10px; width: 100%; }
+    .button-primary, .button-secondary { width: 100%; justify-content: center; padding: 15px 18px; }
+    .hero-visual { padding: 0 10px 10px; }
+    .hero-visual-card { border-radius: 22px; }
+    .story-ribbon { grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 18px; }
+    .hero-eventmeta { gap: 8px; margin-bottom: 18px; }
+    .hero-eventmeta span { font-size: .84rem; padding: 8px 12px; border-radius: 12px; }
+    h2.section-title { font-size: 1.4rem; line-height: 1.4; }
+    .section-lead { font-size: .9rem; line-height: 1.7; }
+    .info-item { grid-template-columns: 1fr; gap: 6px; padding: 16px 0; }
+    .timeline { padding-left: 0; }
+    .timeline::before { left: 62px; top: 8px; bottom: 8px; }
+    .timeline-item { grid-template-columns: 54px 18px 1fr; gap: 8px; margin-bottom: 8px; }
+    .timeline-time { font-size: .88rem; padding-top: 12px; }
+    .timeline-dot { width: 16px; height: 16px; margin-top: 14px; }
+    .cta-section { padding-bottom: 68px; }
+    .cta-card { padding: 32px 20px; border-radius: 24px; }
+    .cta-title { font-size: 1.35rem; line-height: 1.5; }
+    .cta-actions { flex-direction: column; width: 100%; }
+    .cta-actions .button-primary, .cta-actions .button-secondary { width: 100%; }
+    .footer-inner { flex-direction: column; align-items: flex-start; gap: 10px; }
+    .footer-meta { align-items: flex-start; }
+    .footer-copy { text-align: left; }
+    body { padding-bottom: 78px; }
+    .mobile-cta-bar {
+      display: flex; gap: 10px; align-items: center; position: fixed; left: 0; right: 0; bottom: 0; z-index: 60;
+      padding: 10px 12px calc(10px + env(safe-area-inset-bottom)); background: rgba(255,250,240,0.96);
+      backdrop-filter: blur(12px); border-top: 1px solid rgba(201,150,43,0.2); box-shadow: 0 -8px 24px rgba(150,110,40,0.14);
+    }
+    .mobile-cta-bar .mcb-sub { flex: 0 0 auto; padding: 13px 16px; border-radius: 999px; font-weight: 800; color: var(--green-dark); background: rgba(255,246,232,0.96); border: 1px solid rgba(201,150,43,0.2); font-size: .88rem; white-space: nowrap; }
+    .mobile-cta-bar .mcb-apply { flex: 1 1 auto; text-align: center; padding: 14px 16px; border-radius: 999px; font-weight: 900; color: #fff; background: linear-gradient(135deg, var(--green), var(--sage-deep)); box-shadow: 0 12px 24px rgba(67,166,59,0.3); display: inline-flex; align-items: center; justify-content: center; gap: 8px; }
+  }
+</style>
+
+<!-- アイコン用SVGスプライト（外部CDNに依存しない自己完結型） -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="16" rx="2"/><path d="M3 9h18M8 2.5v4M16 2.5v4M7.5 13h2M11 13h2M14.5 13h2M7.5 16.5h2M11 16.5h2"/></symbol>
+  <symbol id="i-video" viewBox="0 0 24 24"><rect x="2.5" y="6" width="13" height="12" rx="2"/><path d="M15.5 10l5-3v10l-5-3z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s6.5-6 6.5-11a6.5 6.5 0 1 0-13 0C5.5 15 12 21 12 21z"/><circle cx="12" cy="10" r="2.3"/></symbol>
+  <symbol id="i-seedling" viewBox="0 0 24 24"><path d="M12 20.5v-7.5"/><path d="M12 13c0-3 2.5-5.2 6.2-5.2C18.2 10.8 15.7 13 12 13z"/><path d="M12 15c0-2.6-2.1-4.6-5.7-4.6C6.3 13 8.4 15 12 15z"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="9" r="5.3"/><path d="M8.8 13.4L7.3 21l4.7-2.6L16.7 21l-1.5-7.6"/></symbol>
+  <symbol id="i-house" viewBox="0 0 24 24"><path d="M4 11l8-6.5 8 6.5"/><path d="M6 10v9h12v-9"/></symbol>
+  <symbol id="i-house2" viewBox="0 0 24 24"><path d="M4 11l8-6.5 8 6.5"/><path d="M6 10v9h12v-9"/><path d="M16 6.6V4h2v4.1"/></symbol>
+  <symbol id="i-arr" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+  <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M7 4.5h10V9a5 5 0 0 1-10 0z"/><path d="M7 6H4.5v1.5a3 3 0 0 0 3 3M17 6h2.5v1.5a3 3 0 0 1-3 3"/><path d="M10 13.8V16M14 13.8V16M8.5 20h7M9.5 20a2.5 2.5 0 0 1 5 0"/></symbol>
+  <symbol id="i-mtn" viewBox="0 0 24 24"><circle cx="17.5" cy="6.5" r="2.4"/><path d="M2 20l6-9 4 6 2.5-3.5L22 20z"/></symbol>
+  <symbol id="i-cow" viewBox="0 0 24 24"><path d="M5 7.5C3.4 7.5 2 6.4 2 5c1.6-.6 3 .3 3.2 1.8M19 7.5c1.6 0 3-1.1 3-2.5-1.6-.6-3 .3-3.2 1.8"/><path d="M5 7c0 5 3 8.5 7 8.5S19 12 19 7"/><circle cx="9.5" cy="9.8" r="1"/><circle cx="14.5" cy="9.8" r="1"/><path d="M10 13.2h4"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-9.6A3.8 3.8 0 0 1 12 8a3.8 3.8 0 0 1 7-2.6C19 15.6 12 20 12 20z"/></symbol>
+  <symbol id="i-cert" viewBox="0 0 24 24"><circle cx="12" cy="8.8" r="5"/><path d="M12 6.3l.9 1.9 2 .2-1.5 1.4.4 2-1.8-1-1.8 1 .4-2-1.5-1.4 2-.2z"/><path d="M9.2 13.2L8 20l4-2.3L16 20l-1.2-6.8"/></symbol>
+  <symbol id="i-snow" viewBox="0 0 24 24"><path d="M12 2.5v19M3.5 12h17M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4"/></symbol>
+  <symbol id="i-pen" viewBox="0 0 24 24"><path d="M12 4.5H5.5a1 1 0 0 0-1 1v13a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V12"/><path d="M18 3l3 3-8.6 8.6-3.6.6.6-3.6z"/></symbol>
+  <symbol id="i-comments" viewBox="0 0 24 24"><path d="M4 5.5h16a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H9l-4 3v-3H4a1 1 0 0 1-1-1v-8a1 1 0 0 1 1-1z"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5.5h16a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H9l-4 3v-3H4a1 1 0 0 1-1-1v-8a1 1 0 0 1 1-1z"/><circle cx="9" cy="10.5" r="1"/><circle cx="12" cy="10.5" r="1"/><circle cx="15" cy="10.5" r="1"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+  <symbol id="i-yen" viewBox="0 0 24 24"><path d="M6 5l6 7.5L18 5M12 12.5V19M8 14.5h8M8 17.5h8"/></symbol>
+  <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.6"/><path d="M5 17.5l4.5-4 3 2.5L16 12l3.5 3.5"/></symbol>
+  <symbol id="i-ext" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-8.5 8.5M18 13.5V18a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4.5"/></symbol>
+  <symbol id="i-rotate" viewBox="0 0 24 24"><path d="M20 11a8 8 0 1 0-.9 4.5"/><path d="M20 5v6h-6"/></symbol>
+</defs></svg>
+
+<nav>
+  <div class="nav-inner">
+    <a href="#top" class="brand">
+      <span class="brand-text">飛騨牛牧場のオンライン説明会<br><span style="font-size:.78rem;color:var(--muted);font-weight:700;">岐阜・高山の飛騨牛牧場／Zoom開催</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="#overview">説明会概要</a>
+      <a href="#companies">出展牧場</a>
+      <a href="#flow">申込の流れ</a>
+      <a href="#schedule">当日の流れ</a>
+      <a href="#faq">FAQ</a>
+      <a href="#apply" class="cta-mini">申込はこちら</a>
+    </div>
+  </div>
+</nav>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-shell fade-up visible">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <div class="hero-eventmeta">
+            <span class="ev-date"><svg class="ic"><use href="#i-cal"/></svg> 開催日：日程調整中（13:00〜15:30 予定）</span>
+            <span class="ev-online"><svg class="ic"><use href="#i-video"/></svg> オンライン（Zoom）開催</span>
+          </div>
+          <h1 class="hero-title"><span class="accent-gold">飛騨牛</span>の牧場ではたらく。<br>未経験からはじめる、<span class="accent">岐阜・高山</span>のオンライン説明会</h1>
+          <p class="hero-sub">
+            “和牛のオリンピック”を目指す、受賞歴ある飛騨牛牧場。<br>
+            40〜50代・未経験から、資格取得の支援を受けながらプロを目指せます。<br>
+            まずは会社説明を聞いて、気になることを個別に相談できる1日です。
+          </p>
+          <div class="hero-badges">
+            <span class="hero-badge"><svg class="ic"><use href="#i-pin"/></svg> 岐阜・高山（飛騨牛）</span>
+            <span class="hero-badge"><svg class="ic"><use href="#i-seedling"/></svg> 40〜50代・未経験歓迎</span>
+            <span class="hero-badge"><svg class="ic"><use href="#i-award"/></svg> 資格取得を会社が支援</span>
+            <span class="hero-badge"><svg class="ic"><use href="#i-house"/></svg> 住まい・移住サポートあり</span>
+          </div>
+          <div class="hero-actions">
+            <a href="#apply" class="button-primary">参加申込はこちら <svg class="ic"><use href="#i-arr"/></svg></a>
+            <a href="#overview" class="button-secondary">詳細を見る <svg class="ic"><use href="#i-chev"/></svg></a>
+          </div>
+          <p class="hero-note">参加無料 ／ まずは話を聞くだけでもOK ／ 事前準備は担当者がサポート</p>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-visual-card">
+            <!-- ▼写真差し替え位置：ヒーロー画像（牧場・飛騨牛・高山の風景など）。 -->
+            <div class="photo-ph">
+              <svg viewBox="0 0 640 620" preserveAspectRatio="xMidYMid slice" role="img" aria-label="高山の飛騨牛牧場のイメージ">
+                <defs>
+                  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfeaff"/><stop offset="1" stop-color="#eaf6ff"/></linearGradient>
+                  <linearGradient id="mtn" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6f9f5f"/><stop offset="1" stop-color="#4f7d43"/></linearGradient>
+                  <linearGradient id="mtn2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8bb37a"/><stop offset="1" stop-color="#6b9a5a"/></linearGradient>
+                  <linearGradient id="field" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a7cf7f"/><stop offset="1" stop-color="#7fb457"/></linearGradient>
+                </defs>
+                <rect width="640" height="620" fill="url(#sky)"/>
+                <circle cx="510" cy="110" r="46" fill="#fff4cf"/>
+                <path d="M0 300 L150 150 L300 300 Z" fill="url(#mtn2)"/>
+                <path d="M180 300 L360 120 L540 300 Z" fill="url(#mtn)"/>
+                <path d="M300 120 L330 155 L360 120 Q345 108 330 120 Z" fill="#f4f8fb" opacity="0.85"/>
+                <path d="M400 300 L560 175 L700 300 Z" fill="url(#mtn2)"/>
+                <rect y="300" width="640" height="320" fill="url(#field)"/>
+                <path d="M0 330 Q160 300 320 330 T640 330 L640 360 L0 360 Z" fill="#8ec066" opacity="0.6"/>
+                <ellipse cx="320" cy="560" rx="150" ry="26" fill="#5f9445" opacity="0.35"/>
+                <g transform="translate(230 430)">
+                  <ellipse cx="90" cy="70" rx="95" ry="55" fill="#3b352d"/>
+                  <ellipse cx="120" cy="60" rx="40" ry="30" fill="#f4efe6"/>
+                  <ellipse cx="55" cy="55" rx="26" ry="22" fill="#f4efe6"/>
+                  <rect x="20" y="95" width="14" height="46" rx="6" fill="#2c2721"/>
+                  <rect x="55" y="100" width="14" height="42" rx="6" fill="#2c2721"/>
+                  <rect x="120" y="100" width="14" height="42" rx="6" fill="#2c2721"/>
+                  <rect x="152" y="95" width="14" height="46" rx="6" fill="#2c2721"/>
+                  <ellipse cx="182" cy="42" rx="34" ry="30" fill="#3b352d"/>
+                  <ellipse cx="196" cy="52" rx="20" ry="15" fill="#e9b9a3"/>
+                  <path d="M160 20 Q150 4 166 8" stroke="#d8c7a0" stroke-width="7" fill="none" stroke-linecap="round"/>
+                  <path d="M204 20 Q214 4 198 8" stroke="#d8c7a0" stroke-width="7" fill="none" stroke-linecap="round"/>
+                  <circle cx="176" cy="38" r="4" fill="#fff"/>
+                </g>
+              </svg>
+              <span class="photo-tag"><svg class="ic"><use href="#i-image"/></svg> イメージ（写真差し替え）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="award-band fade-up delay-1">
+      <div class="award-medal"><svg class="ic"><use href="#i-trophy"/></svg></div>
+      <div class="award-text">
+        <strong>2025年 岐阜県下農協共進会「優秀賞1席」。2027年 全国和牛能力共進会“和牛のオリンピック”選出候補牧場。</strong>
+        <p>最高ランク<span class="hl">5等級の飛騨牛</span>を数多く生産する少数精鋭の牧場。いままさに、全国大会への挑戦がはじまるタイミングです。</p>
+      </div>
+    </div>
+
+    <div class="story-ribbon">
+      <div class="story-chip fade-up delay-1"><div class="icon"><svg class="ic"><use href="#i-mtn"/></svg></div><p>標高1,000mの<br>自然の中で働く</p></div>
+      <div class="story-chip fade-up delay-1"><div class="icon"><svg class="ic"><use href="#i-cow"/></svg></div><p>飛騨牛づくりに<br>携わる毎日</p></div>
+      <div class="story-chip fade-up delay-2"><div class="icon"><svg class="ic"><use href="#i-heart"/></svg></div><p>未経験から<br>プロを目指す</p></div>
+      <div class="story-chip fade-up delay-2"><div class="icon"><svg class="ic"><use href="#i-cert"/></svg></div><p>資格取得を<br>会社が支援</p></div>
+      <div class="story-chip fade-up delay-3"><div class="icon"><svg class="ic"><use href="#i-snow"/></svg></div><p>四季と<br>ウィンタースポーツ</p></div>
+      <div class="story-chip fade-up delay-3"><div class="icon"><svg class="ic"><use href="#i-house2"/></svg></div><p>移住・住まい<br>サポートあり</p></div>
+    </div>
+  </section>
+
+  <section id="overview" class="section">
+    <div class="container">
+      <div class="section-title-wrap fade-up">
+        <div class="eyebrow">Event Overview</div>
+        <h2 class="section-title">オンライン説明会＆個別面談会 概要</h2>
+        <p class="section-lead">
+          40〜50代・未経験歓迎のオンライン企業説明会です。<br>会社説明を聞いたあと、気になることを個別に相談。ご希望の方はそのまま面談（選考）も受けられます。
+        </p>
+      </div>
+
+      <div class="overview-grid" style="grid-template-columns:1fr;">
+        <div class="glass-card info-card fade-up delay-1">
+          <div class="info-item">
+            <div class="info-label">イベント名</div>
+            <div class="info-value"><strong>飛騨牛牧場のオンライン説明会＆個別面談会</strong></div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">日時</div>
+            <div class="info-value"><strong>日程調整中（13:00〜15:30 予定）</strong><div class="info-sub">確定日程はこちらに記載します。</div></div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">開催形式</div>
+            <div class="info-value"><strong>オンライン開催（Zoom）</strong><div class="info-sub">参加URLは申込後にご案内します。PC・スマホどちらでも参加OK。</div></div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">内容</div>
+            <div class="info-value">会社説明会 ・ 個別面談（ご希望の方は選考も）</div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">出展</div>
+            <div class="info-value"><strong>岐阜県高山市の飛騨牛牧場 1社</strong><div class="info-sub">少数精鋭・アットホームな職場です。</div></div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">対象</div>
+            <div class="info-value">40〜50代 ／ 未経験歓迎 ／ 移住希望の方歓迎<div class="info-sub">性別・学歴・前職は問いません。まずは情報収集からでもOKです。</div></div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">参加費</div>
+            <div class="info-value"><strong>無料</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="companies" class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="section-title-wrap fade-up">
+        <div class="eyebrow">Participating Farm</div>
+        <h2 class="section-title">出展牧場のご紹介</h2>
+      </div>
+
+      <div class="overview-grid" style="margin-bottom:26px;">
+        <article class="glass-card fade-up delay-1" style="overflow:hidden;">
+          <!-- ▼写真差し替え位置：牧場・牛・スタッフの写真 -->
+          <div class="photo-ph" style="min-height:300px;height:100%;">
+            <svg viewBox="0 0 640 460" preserveAspectRatio="xMidYMid slice" role="img" aria-label="飛騨牛牧場のイメージ">
+              <defs>
+                <linearGradient id="sky2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d8ecff"/><stop offset="1" stop-color="#eef7ff"/></linearGradient>
+                <linearGradient id="barn" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c98b57"/><stop offset="1" stop-color="#a9713f"/></linearGradient>
+              </defs>
+              <rect width="640" height="460" fill="url(#sky2)"/>
+              <path d="M0 210 L170 90 L340 210 Z" fill="#7ba368"/>
+              <path d="M260 210 L460 100 L660 210 Z" fill="#5f8b4d"/>
+              <rect y="210" width="640" height="250" fill="#8ec066"/>
+              <rect y="250" width="640" height="210" fill="#7cb257"/>
+              <g transform="translate(360 150)">
+                <rect x="0" y="40" width="230" height="120" fill="url(#barn)"/>
+                <path d="M-12 40 L115 -8 L242 40 Z" fill="#8a5a30"/>
+                <rect x="30" y="80" width="46" height="80" fill="#6f4826"/>
+                <rect x="150" y="80" width="46" height="80" fill="#6f4826"/>
+                <rect x="96" y="70" width="40" height="34" fill="#f3e7cf" opacity="0.85"/>
+              </g>
+              <g transform="translate(70 250)">
+                <ellipse cx="80" cy="60" rx="80" ry="46" fill="#3b352d"/>
+                <ellipse cx="105" cy="52" rx="34" ry="26" fill="#f4efe6"/>
+                <rect x="24" y="82" width="12" height="40" rx="5" fill="#2c2721"/>
+                <rect x="52" y="86" width="12" height="38" rx="5" fill="#2c2721"/>
+                <rect x="104" y="86" width="12" height="38" rx="5" fill="#2c2721"/>
+                <rect x="132" y="82" width="12" height="40" rx="5" fill="#2c2721"/>
+                <ellipse cx="156" cy="38" rx="28" ry="25" fill="#3b352d"/>
+                <ellipse cx="168" cy="46" rx="16" ry="12" fill="#e9b9a3"/>
+                <path d="M138 20 Q130 6 144 10" stroke="#d8c7a0" stroke-width="6" fill="none" stroke-linecap="round"/>
+                <path d="M174 20 Q182 6 168 10" stroke="#d8c7a0" stroke-width="6" fill="none" stroke-linecap="round"/>
+              </g>
+            </svg>
+            <span class="photo-tag"><svg class="ic"><use href="#i-image"/></svg> イメージ（写真差し替え）</span>
+          </div>
+        </article>
+        <div class="glass-card info-card fade-up delay-2" style="display:flex;flex-direction:column;justify-content:center;padding:28px;">
+          <h3 style="font-size:1.3rem;line-height:1.4;margin-bottom:12px;">標高1,000m・高山の水と気候が育てる、受賞歴ある飛騨牛牧場</h3>
+          <div class="company-tags" style="margin-bottom:16px;">
+            <span>未経験歓迎</span>
+            <span>資格取得支援</span>
+            <span>住まい・移住サポート</span>
+            <span>高山駅まで車40分</span>
+          </div>
+          <p style="color:var(--muted);font-size:0.95rem;line-height:1.85;">40代の代表・30代前半のスタッフ・50代の理事という少数精鋭で、一頭一頭の牛と真摯に向き合う牧場です。機械導入による効率化と、個体ごとのデータ管理に基づく丁寧なマニュアル運用を組み合わせ、最高ランク5等級の飛騨牛を数多く生産。75haの広大な牧場では8〜10月に妊娠牛を放牧し、ストレスの少ない環境で健康的に育てています。<br><br>未経験でも教育担当が基礎から丁寧に指導。生まれたばかりの命に触れ、日々の成長を間近に感じながら働けます。</p>
+        </div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;">
+        <div class="glass-card feature-card fade-up delay-1">
+          <div class="feature-icon"><svg class="ic"><use href="#i-mtn"/></svg></div>
+          <div>
+            <h3>働く地域・暮らし</h3>
+            <p>標高約1,000m、岐阜・高山の<b>自然豊かな環境</b>。四季がはっきりし、<b>夏は涼しく、冬はウィンタースポーツ</b>も楽しめます。JR高山駅まで車で約40分、周辺には大型ホームセンターや家電量販店・飲食店もそろい、<b>暮らしに困りません</b>。</p>
+          </div>
+        </div>
+        <div class="glass-card feature-card fade-up delay-2">
+          <div class="feature-icon"><svg class="ic"><use href="#i-cow"/></svg></div>
+          <div>
+            <h3>飛騨牛づくりのお仕事</h3>
+            <p>牛が生まれてから出荷までを担う<b>一貫飼育</b>。給餌・牛舎清掃・体調管理に加え、分娩介助や繁殖管理、堆肥づくり、農業機械の運転まで。<b>命を育て、地域ブランドを支えるやりがい</b>のある仕事です。</p>
+          </div>
+        </div>
+        <div class="glass-card feature-card fade-up delay-3">
+          <div class="feature-icon"><svg class="ic"><use href="#i-cert"/></svg></div>
+          <div>
+            <h3>未経験歓迎＆資格取得支援</h3>
+            <p>入社後は<b>教育担当が一つずつ丁寧にレクチャー</b>。中型・大型特殊・<b>家畜人工授精師などの資格取得費用も会社が補助</b>します。本気の方は入社3ヶ月半〜半年を目安に人工授精師資格の取得を開始することも可能です。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass-card info-card fade-up delay-2" style="margin-top:26px;">
+        <div class="info-item">
+          <div class="info-label">勤務地</div>
+          <div class="info-value"><strong>岐阜県高山市</strong><div class="info-sub">JR高山駅まで車で約40分。車を用意できなくても、当面は従業員との乗り合わせ送迎OK。</div></div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">仕事内容</div>
+          <div class="info-value"><strong>肉牛（飛騨牛）の飼育スタッフ／一貫飼育</strong><div class="info-sub">給餌・牛舎清掃・体調管理・分娩介助・繁殖管理、堆肥の製造販売、農業機械（ローダー・フォークリフト等）の運転など。</div></div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">勤務時間</div>
+          <div class="info-value"><strong>7:30〜17:00（実働8時間・休憩90分）</strong><div class="info-sub">残業は月平均2〜3時間程度（牧草収穫期は5〜6時間程度）。</div></div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">休日</div>
+          <div class="info-value"><strong>年間84日（月7日・シフト制）</strong><div class="info-sub">年末年始休暇・有給休暇あり。</div></div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">給与</div>
+          <div class="info-value"><strong>月給 210,000円 〜 250,000円</strong><div class="info-sub">年収例：未経験入社1年目 約300万円／2年目 約330〜350万円（経験・能力により決定）。</div></div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">待遇</div>
+          <div class="info-value"><span class="mini-tag">社会保険完備</span><span class="mini-tag">昇給あり</span><span class="mini-tag">賞与年2回</span><span class="mini-tag">住宅手当（家賃半額補助）</span><span class="mini-tag">資格取得支援</span><span class="mini-tag">業績手当（入賞時実績2ヶ月分）</span><span class="mini-tag">飛騨牛持ち帰り可</span><span class="mini-tag">産休・育休／介護休暇</span></div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">応募条件</div>
+          <div class="info-value"><strong>学歴・経験不問／未経験歓迎／要普通自動車免許（AT限定可）</strong><div class="info-sub">現在お仕事中の方や、まず話を聞いてみたいという方もご参加いただけます。</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="flow" class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="section-title-wrap fade-up" style="text-align:center;">
+        <div class="eyebrow" style="justify-content:center;">How to Apply</div>
+        <h2 class="section-title">申込はカンタン3ステップ</h2>
+        <p class="section-lead" style="margin-left:auto;margin-right:auto;">入力はお名前・連絡先など基本項目だけ。<b>申込の所要時間は約1分</b>です。まずは話を聞いてみたい、という段階でも大丈夫です。</p>
+      </div>
+      <div class="steps">
+        <div class="glass-card step-card fade-up delay-1">
+          <div class="step-num">1</div>
+          <div class="step-icn"><svg class="ic"><use href="#i-pen"/></svg></div>
+          <h3>フォームから申込（約1分）</h3>
+          <p>お名前・連絡先など基本項目のみ。<br>スマホからそのまま申込できます。</p>
+        </div>
+        <div class="glass-card step-card fade-up delay-2">
+          <div class="step-num">2</div>
+          <div class="step-icn"><svg class="ic"><use href="#i-comments"/></svg></div>
+          <h3>担当者から個別にご連絡</h3>
+          <p>翌営業日を目途にキャリアアドバイザーがご連絡。<br>不安なことや聞きたいことを事前に相談できます。</p>
+        </div>
+        <div class="glass-card step-card fade-up delay-3">
+          <div class="step-num">3</div>
+          <div class="step-icn"><svg class="ic"><use href="#i-video"/></svg></div>
+          <h3>当日オンラインで参加</h3>
+          <p>Zoomで会社説明を聞き、気になることを個別に相談。<br>ご希望の方はそのまま面談も受けられます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="schedule" class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="section-title-wrap fade-up" style="text-align:center;">
+        <div class="eyebrow" style="justify-content:center;">Day Schedule</div>
+        <h2 class="section-title">当日の流れ</h2>
+        <p class="section-lead" style="margin-left:auto;margin-right:auto;">会社説明のあと、個別の相談・面談の時間があります。<br>PC・スマートフォンどちらでもご参加いただけます。<br>※タイムスケジュールは目安です。</p>
+      </div>
+
+      <div class="schedule-shell timeline">
+        <div class="timeline-item fade-up delay-1">
+          <div class="timeline-time">13:00</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content"><div class="glass-card timeline-box">
+            <h3>入室開始</h3>
+            <p>Zoomの接続確認ができる時間。オンライン参加が不安な方も、運営スタッフがサポートします。</p>
+          </div></div>
+        </div>
+        <div class="timeline-item fade-up delay-1">
+          <div class="timeline-time">13:10</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content"><div class="glass-card timeline-box">
+            <h3>全体説明</h3>
+            <p>当日の流れや操作の留意事項などをご案内します。</p>
+          </div></div>
+        </div>
+        <div class="timeline-item fade-up delay-2">
+          <div class="timeline-time">13:15</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content"><div class="glass-card timeline-box">
+            <h3>会社説明会</h3>
+            <p>仕事内容、働く人、高山での暮らし方まで、イメージが湧くように詳しくご紹介します。</p>
+          </div></div>
+        </div>
+        <div class="timeline-item fade-up delay-2">
+          <div class="timeline-time">13:45</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content"><div class="glass-card timeline-box">
+            <h3>10分間休憩</h3>
+            <p>説明を振り返りながら、個別に聞いてみたいことを整理する時間です。</p>
+          </div></div>
+        </div>
+        <div class="timeline-item fade-up delay-3">
+          <div class="timeline-time">13:55</div>
+          <div class="timeline-dot emphasis"></div>
+          <div class="timeline-content"><div class="glass-card timeline-box">
+            <h3>個別相談・面談</h3>
+            <p>気になることを直接ご質問ください。ご希望の方はそのまま面談（選考）も受けられます（1人15分程度を想定）。</p>
+          </div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="section-title-wrap fade-up" style="text-align:center;">
+        <div class="eyebrow" style="justify-content:center;">FAQ</div>
+        <h2 class="section-title">よくある質問</h2>
+      </div>
+      <div class="faq-grid">
+        <div class="glass-card faq-item fade-up delay-1">
+          <div class="faq-q"><div class="faq-mark">Q</div><strong>牧場で働いた経験がなくても参加できますか？</strong></div>
+          <div class="faq-a"><div class="faq-mark">A</div><p>はい。未経験OKを前提にしたイベントです。入社後は教育担当が基礎から丁寧に教えますので、「まず話を聞いてみたい」段階でも安心してご参加ください。</p></div>
+        </div>
+        <div class="glass-card faq-item fade-up delay-1">
+          <div class="faq-q"><div class="faq-mark">Q</div><strong>40代・50代でも大丈夫ですか？</strong></div>
+          <div class="faq-a"><div class="faq-mark">A</div><p>もちろん歓迎です。本イベントは40〜50代の方を対象にご案内しています。前職や性別・学歴は問いません。</p></div>
+        </div>
+        <div class="glass-card faq-item fade-up delay-2">
+          <div class="faq-q"><div class="faq-mark">Q</div><strong>服装はスーツが必要ですか？</strong></div>
+          <div class="faq-a"><div class="faq-mark">A</div><p>オンライン開催のため普段着で問題ありません。※面談ではカメラONをお願いしますので、あまりにカジュアルな服装（タンクトップなど）はお控えください。</p></div>
+        </div>
+        <div class="glass-card faq-item fade-up delay-2">
+          <div class="faq-q"><div class="faq-mark">Q</div><strong>高山への移住がまだ具体的でなくても大丈夫ですか？</strong></div>
+          <div class="faq-a"><div class="faq-mark">A</div><p>大丈夫です。家賃半額補助や借上げ社宅など住まいのサポートがあり、個別に相談できますのでご安心ください。</p></div>
+        </div>
+        <div class="glass-card faq-item fade-up delay-3">
+          <div class="faq-q"><div class="faq-mark">Q</div><strong>車の免許はAT限定でも参加できますか？</strong></div>
+          <div class="faq-a"><div class="faq-mark">A</div><p>はい、AT限定可です（応募時点で問題ありません）。業務で使う機械については、資格取得の費用補助もあります。</p></div>
+        </div>
+        <div class="glass-card faq-item fade-up delay-3">
+          <div class="faq-q"><div class="faq-mark">Q</div><strong>まず話を聞くだけの参加でもよいですか？</strong></div>
+          <div class="faq-a"><div class="faq-mark">A</div><p>はい。情報収集の段階でもご参加いただけます。迷っている方や不安な方は、事前にキャリアアドバイザーにご相談ください。</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="apply" class="section cta-section">
+    <div class="container">
+      <div class="glass-card cta-card fade-up">
+        <div class="eyebrow" style="justify-content:center;">Registration</div>
+        <h2 class="cta-title">参加申し込み</h2>
+        <div class="cta-chips">
+          <span class="cta-chip"><svg class="ic"><use href="#i-clock"/></svg> 申込は約1分</span>
+          <span class="cta-chip"><svg class="ic"><use href="#i-yen"/></svg> 参加無料</span>
+          <span class="cta-chip"><svg class="ic"><use href="#i-chat"/></svg> まずは話を聞くだけでもOK</span>
+        </div>
+        <p class="cta-copy">
+          本イベントは事前申込制です。<br>
+          お申込み完了後、翌営業日までを目途に、弊社キャリアアドバイザーより個別にご連絡いたします。<br>
+          事前に確認・相談したいことがあれば、そのときにお気軽にお話しください。
+        </p>
+        <div class="cta-actions">
+          <!-- ▼申込フォームURL差し替え位置：この案件用の申込フォームURLを設定してください。 -->
+          <a href="#" class="button-primary" target="_blank" rel="noopener noreferrer">参加申込フォームへ <svg class="ic"><use href="#i-ext"/></svg></a>
+          <a href="#overview" class="button-secondary">概要をもう一度見る <svg class="ic"><use href="#i-rotate"/></svg></a>
+        </div>
+        <p class="subnote">※申込人数が多い場合は、早期に受付を締め切らせていただく場合がございます。</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="mobile-cta-bar">
+  <a href="#overview" class="mcb-sub">概要</a>
+  <a href="#apply" class="mcb-apply"><svg class="ic"><use href="#i-pen"/></svg> 参加申込はこちら</a>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">あぐりナビ運営事務局</div>
+    <div class="footer-meta">
+      <div class="footer-links">
+        <a href="#overview">説明会概要</a>
+        <a href="#companies">出展牧場</a>
+        <a href="#flow">申込の流れ</a>
+        <a href="#schedule">当日の流れ</a>
+        <a href="#faq">FAQ</a>
+        <a href="#apply">申込</a>
+      </div>
+      <div class="footer-copy">© 2026 あぐりナビ. All rights reserved. ／ 飛騨牛牧場のオンライン説明会＆個別面談会（岐阜・高山）</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function() {
+    const items = document.querySelectorAll('.fade-up');
+    const vh = window.innerHeight || document.documentElement.clientHeight;
+    document.documentElement.classList.add('js-animate');
+    items.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < vh * 1.1) {
+        el.classList.add('pending');
+        requestAnimationFrame(() => requestAnimationFrame(() => el.classList.add('visible')));
+      }
+    });
+  })();
+
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const href = a.getAttribute('href');
+      if (href === '#') return;
+      e.preventDefault();
+      const target = document.querySelector(href);
+      if (target) {
+        const top = target.getBoundingClientRect().top + window.scrollY - 72;
+        window.scrollTo({ top, behavior: 'smooth' });
+      }
+    });
+  });
+</script>
